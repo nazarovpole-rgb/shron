@@ -1,11 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <title>Шрон</title>
-</head>
-<body>
-  <h1>Привет, это мой сайт на GitHub Pages!</h1>
-  <p>Работает из папки /p</p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Шрон</title>
+    <script type="module" crossorigin src="/assets/index-[хэш].js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-[хэш].css">
+  </head>
+  <body>
+    <div id="root"></div>
+    
+    <!-- 
+      ВАЖНО: после npm run build в папке dist появятся реальные файлы вида:
+      assets/index-abc123.js
+      assets/index-def456.css
+      
+      Тогда замени [хэш] на настоящий (например index-97d4f2e1.js)
+      Пока билда нет — сайт не заработает даже с этим файлом
+    -->
+  </body>
 </html>
